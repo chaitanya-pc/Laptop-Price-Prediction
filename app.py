@@ -69,4 +69,4 @@ if st.button('Predict Price'):
 
         query = query.reshape(1, 12)
         predicted_price = np.exp(pipe.predict(query)[0])
-        st.title(f"The predicted price of this configuration is ₹{int(predicted_price)}")
+        st.title(f"The predicted price of this configuration is ₹ {int(predicted_price)}")
